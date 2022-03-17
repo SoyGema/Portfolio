@@ -7,11 +7,11 @@ CODE : Taking into account the challenge and questions , several different pytho
 
 ● Generalization over probability distribution calculation in any 2 dice games.There are three methods :
 
-    *  dice_prob : A function calculates the probability distribution of sum in any 2 dice games, taking as an input the range of equality distributed probability n-sided dice . The output of this function returns a dictionary defined with a key ,value pair in which the key corresponds to the different possible sums and the value corresponds to the probability distribution of each sum .
+   dice_prob : A function calculates the probability distribution of sum in any 2 dice games, taking as an input the range of equality distributed probability n-sided dice . The output of this function returns a dictionary defined with a key ,value pair in which the key corresponds to the different possible sums and the value corresponds to the probability distribution of each sum .
     
-    * Calculate_prob takes as an input the combinatorial matrix and produces the dictionary of probabilities and calculate_prob_percentages transform these probability into percentage.
+   Calculate_prob takes as an input the combinatorial matrix and produces the dictionary of probabilities and calculate_prob_percentages transform these probability into percentage.
 
-    * Definition of the game. A second function defines the conditions of the game and calculates the probability of winning or losing taking the second roll conditioned probability principle. The input of this function is the dice probability dictionary calculated in the first function and the result of the sum. The output is the probability of winning or losing taking into account the input.
+   Definition of the game. A second function defines the conditions of the game and calculates the probability of winning or losing taking the second roll conditioned probability principle. The input of this function is the dice probability dictionary calculated in the first function and the result of the sum. The output is the probability of winning or losing taking into account the input.
     
 The motivation under this code structure is to separate the possible game definitions from the dice truncated design and the possibility to design truncated dice that could change probability distributions over different sets of games.
 
@@ -35,6 +35,7 @@ For solving this question , a board exercise of matrix possibilities was drawn t
  
  
  
+ ![Screenshot](https://github.com/SoyGema/Portfolio/blob/main/DataExploration/Matrix_prob_dice.png)
  
  Fig 1. Matrix Probability distribution schema comparing 2-sided dices equally distributed and game with truncated dice . Each cell gives us information about the sum in form of a tuple and the distribution for 2-sided dices equally distributed ( blue ) and truncated dice ( grey )
 
